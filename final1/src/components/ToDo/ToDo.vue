@@ -1,6 +1,6 @@
 <template>
 	<div class=" container todo mb-3">
-		<h3>{{ titulo }}</h3>
+
 		<input type="text" class="form-control my-3" v-model="nuevaTarea" @keyup.enter="agregarTarea"/>
 		<button class="btn btn-primary" @click="agregarTarea">Agregar</button>
         

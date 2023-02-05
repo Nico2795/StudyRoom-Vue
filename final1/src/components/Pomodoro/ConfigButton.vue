@@ -1,6 +1,6 @@
 <template>
 	<div class="botones">
-		<button @click ="showSettingsModal">Settings</button>
+		<v-btn  @click ="showSettingsModal" icon="mdi mdi-timer-settings"></v-btn>
 	</div>
 </template>
 <script>

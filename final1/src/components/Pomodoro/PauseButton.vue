@@ -1,6 +1,6 @@
 <template>
 	<div class="botones">
-		<button @click="pauseTimer">Pause Timer</button>
+		<v-btn @click="pauseTimer" icon="mdi mdi-pause"></v-btn>
 	</div>
 </template>
 <script>

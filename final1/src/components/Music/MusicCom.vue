@@ -1,6 +1,5 @@
 <template>
     <div class="music">
-      <div class="musictitle">Música</div>
       <iframe
         style="border-radius: 12px"
         :src="src"

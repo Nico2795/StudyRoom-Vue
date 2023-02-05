@@ -1,19 +1,36 @@
 <template>
+  <div class="full">
+    <AboutComponent></AboutComponent>
+    <PopUp></PopUp>
+    <PopUpMusica></PopUpMusica>
+      <TimerComponent></TimerComponent>
+      <NavComponent></NavComponent>
+      <div class="fondos">
+<BackGround></BackGround>
+      </div>
+
+
+  </div>
 <!--   <MusicCom></MusicCom>
   <ToDo></ToDo> -->
-  <TimerComponent></TimerComponent>
-  <NavComponent></NavComponent>
 </template>
 
 <script>
 import TimerComponent from './Pomodoro/TimerComponent.vue';
-/* import MusicCom from './Music/MusicCom.vue'
-import ToDo from './ToDo/ToDo.vue'; */
 import NavComponent from './SideNav/NavComponent.vue'
+import PopUp from './SideNav/PopUp.vue';
+import PopUpMusica from './SideNav/PopUpMusica.vue';
+import BackGround from './SideNav/BackGround.vue';
+import AboutComponent from './SideNav/AboutComponent.vue';
+
 export default {
   components:{
+    AboutComponent,
+    BackGround,
+    PopUpMusica,
 /*     MusicCom,
     ToDo */
+    PopUp,
 TimerComponent,
 NavComponent,
   },
@@ -39,5 +56,14 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.fondos{
+  margin-top:20px;
+  position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
 }
 </style>

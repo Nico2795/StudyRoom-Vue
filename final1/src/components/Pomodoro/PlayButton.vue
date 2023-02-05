@@ -1,12 +1,19 @@
 <template>
 	<div class="botones">
-		<button @click="startTimer">Start Timer</button>
+		<v-btn class="iconos" @click="startTimer" icon="mdi mdi-play"></v-btn>
+		
 	</div>
 </template>
 <script>
+
+
 export default {
 	// Nombre del componente
+	components:{
+	},
 	name: "StartButton",
+	data(){
+	},
     methods: {
 	startTimer() {
 		this.$emit('start');
@@ -21,4 +28,9 @@ export default {
 	display: flex;
 margin: 10px;
 }
+
+.iconos{
+	width: 200px;
+}
+
 </style>

@@ -1,12 +1,16 @@
 import { createApp } from 'vue'
+import { createVfm } from 'vue-final-modal'
 import App from './App.vue'
+
+const vfm = createVfm()
+
 
 //Inicializamos Ellipse
 
 import VueEllipseProgress from 'vue-ellipse-progress';
 
 const app = createApp()
-
+app.use(vfm).mount('#app')
 app.use(VueEllipseProgress)
 
 // Vuetify
@@ -22,6 +26,10 @@ const vuetify = createVuetify({
   components,
   directives,
 })
+
+//MODAL
+
+
 
 createApp(App).use(vuetify).mount('#app')
 
